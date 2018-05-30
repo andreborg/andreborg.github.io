@@ -1,0 +1,84 @@
+.container1 {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1 {
+	font-family: fantasy;
+	font-size: 3em;
+	font-style: italic;
+	color: rgba(171, 221, 147, 1);
+	padding-bottom: 7.5px;
+	text-align: center;
+	border-bottom: solid 2px rgba(48, 110, 18, 0.6);
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+.imgsz {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.imgsz:hover {opacity: 1;}
+
+.modal {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin:auto;
+	display:block;
+	height: 75vh;
+	width: 75%;
+	max-width: 125vh;
+}
+
+.modal-content {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0);}
+	to {transform: scale(1);}
+}
+.close {
+	position:absolute;
+	top: 75px;
+	right: 350px;
+	color: #FFE2AA;
+	font-size: 100px;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		padding-top: 30px;
+		width: 100%;
+		height: 100%;
+	}
+}

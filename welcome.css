@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    background-image: url("welcomescreen.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centerbtn {
+	text-align:center;
+}
+
+#button {
+	color: rgba(255, 226, 170,1); 
+	transition: all 1s;
+}
+#button:hover {
+	
+	background-color: rgba(0,0,0,0);
+	border-color: rgba(170, 132, 57, 1);
+	transform: scale(1.25);
+}
+
+.btn-outline-primary {
+	border-color: rgba(170, 132, 57, 0.5);
+}
